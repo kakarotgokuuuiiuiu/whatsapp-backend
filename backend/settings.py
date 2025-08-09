@@ -141,6 +141,6 @@ connect(
 
 
 import os
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'whatsapp-backend.onrender.com']
+ALLOWED_HOSTS = ['whatsapp-backend-q2jg.onrender.com', 'whatsapp-backend.onrender.com', 'localhost', '127.0.0.1']
 
 MONGODB_URI = 'mongodb+srv://manojrockzz19:a5hHxNNYfQ0eZ1VU@cluster0.ksi68ds.mongodb.net/'
