@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-stdqu7r_^#llv+8%pue@k!y@-b=zj_s1xp2j8-i7fs!mcwu7vc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['whatsapp-backend.onrender.com',
-    'whatsapp-backend-q2jg.onrender.com']
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
+ASGI_APPLICATION = 'backend.asgi.application'
+
+
 
 
 # Application definition
@@ -44,6 +48,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.common.CommonMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -74,7 +79,6 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
 
 
 # Database
@@ -137,5 +141,6 @@ connect(
 
 
 import os
-ALLOWED_HOSTS = ['whatsapp-backend.onrender.com']
-MONGODB_URI = os.environ.get('mongodb+srv://manojrockzz19:a5hHxNNYfQ0eZ1VU@cluster0.ksi68ds.mongodb.net/')
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'whatsapp-backend.onrender.com']
+
+MONGODB_URI = 'mongodb+srv://manojrockzz19:a5hHxNNYfQ0eZ1VU@cluster0.ksi68ds.mongodb.net/'
