@@ -6,5 +6,5 @@ urlpatterns = [
     path('messages/', get_messages),
     path('messages/<str:wa_id>/', get_messages_by_user),
     path('send_message/', send_message),
-    path('update_status/', update_message_status),  # <-- NEW endpoint for status update
+    path('update_status/', update_message_status),  
 ]

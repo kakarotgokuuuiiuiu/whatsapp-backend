@@ -9,6 +9,6 @@ class Message(Document):
     timestamp = DateTimeField(required=True)
     message = StringField()
     status = StringField(choices=["sent", "delivered", "read"])
-    user_info = DictField()  # Store name, number, etc.
+    user_info = DictField()  
 
     meta = {'collection': 'processed_messages'}

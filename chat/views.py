@@ -60,10 +60,10 @@ def send_message(request):
     if not wa_id or not message_text:
         return Response({"error": "wa_id and message are required"}, status=400)
 
-    # Create message object
+    
     msg = Message(
         wa_id=wa_id,
-        message_id=f"local_{datetime.utcnow().timestamp()}",  # fake ID
+        message_id=f"local_{datetime.utcnow().timestamp()}",  
         timestamp=datetime.utcnow(),
         message=message_text,
         status="sent",
