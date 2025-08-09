@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "whatsapp_backend"
+version = "0.1.0"
+description = "Backend for WhatsApp Clone"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"  # Updated Python requirement
+Django = "^5.0.6"
+djangorestframework = "^3.15.1"
+channels = "^4.1.0"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.0"
+channels-redis = "^4.1.0"
+
+[tool.poetry.group.dev.dependencies]  # Updated syntax
+pytest = "^7.4.0"
+pytest-django = "^4.5.2"
+ipython = "^8.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
