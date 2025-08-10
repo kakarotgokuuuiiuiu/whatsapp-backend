@@ -23,7 +23,7 @@ This is the backend API for the WhatsApp Clone project, built with Django REST F
 ## Setup & Installation
 
 1. Clone the repository
-git clone https://github.com/your-username/your-backend-repo.gi
+git clone https://github.com/kakarotgokuuuiiuiu/whatsapp-backend.git
 cd your-backend-repo
 
 python -m venv venv
